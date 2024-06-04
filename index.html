@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="block">
+        <h1>User list</h1>
+        <button class="btnOpenAddModal">New</button>
+      </div>
+      <div class="block">
+        <div class="mini_block">
+          <select class="filterStatus">
+            <option value="">All Status</option>
+            <option value="true">Active</option>
+            <option value="false">Inactive</option>
+          </select>
+          <select class="filterCity">
+            <option value="">All cities</option>
+            <option value="Dushanbe">Dushanbe</option>
+            <option value="Bokhtar">Bokhtar</option>
+            <option value="Khujand">Khujand</option>
+          </select>
+        </div>
+        <input
+          type="search"
+          placeholder="Search name, email..."
+          class="inpSearch"
+        />
+      </div>
+    </header>
+    <div id="root">
+      <table class="table">
+        <tr>
+          <th>Img</th>
+          <th>Email & Fullname</th>
+          <th>City</th>
+          <th>Status</th>
+          <th>Phone</th>
+          <th>options</th>
+        </tr>
+      </table>
+    </div>
+    <dialog class="delModal">
+      <div class="btnSec">
+        <h1>Do you want to delete this list</h1>
+      </div>
+      <div class="btnSec">
+        <button class="btnYes">Yes</button>
+        <button class="btnNo">No</button>
+      </div>
+    </dialog>
+    <dialog class="addModal">
+      <input type="text" placeholder="JPG, PNG" />
+      <input type="email" placeholder="Input your email" />
+      <select class="selectCity">
+        <option value="Dushanbe">Dushanbe</option>
+        <option value="Khujand">Khujand</option>
+        <option value="Kulob">Kulob</option>
+        <option value="Hissor">Hissor</option>
+        <option value="Bokhtar">Bokhtar</option>
+      </select>
+    </dialog>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
